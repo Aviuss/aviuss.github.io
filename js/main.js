@@ -236,6 +236,7 @@ function display_answer(input, answer) {
 
 
 function highlightTXT(input, txt) {
+    return txt;
     input = input.split(" ")
     txt = txt.split(" ")
     
