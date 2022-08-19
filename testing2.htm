@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+
+        let x = ["FAINT"];
+        let y = ["FAINT", "HEARD", "NEVER", "WON", "FAIR", "LADY"];
+
+        function whatToCalculate(x, y) { // output: [to_add, to_delete]
+            let same_counter = 0;
+            let not_included = [];
+
+            for (const elem of y) {
+                if (x.includes(elem)) {same_counter++;} else {not_included.push(elem)}
+            }
+
+            let to_delete_num = x.length - same_counter;
+            const isItWorth = y.length - not_included.length - to_delete_num;
+
+
+            console.log(x, y);
+
+            
+            if (isItWorth <= 0)
+                return [y, []];
+            
+            let to_delete = [];
+            if (to_delete_num > 0){
+                for (const elem of x) {
+                    if (y.includes(elem) === false){
+                        to_delete.push(elem);
+                        to_delete_num--;
+                        if (to_delete_num === 0){
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            return [not_included, to_delete];
+        }
+
+        console.log(whatToCalculate(x, y));
+        
+    </script>
+</body>
+</html>
