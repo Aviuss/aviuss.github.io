@@ -1,0 +1,35 @@
+Liczba wszystkich idiomów: 644
+
+
+Liczba wszystkich wyrazów w idiomach: 2550
+
+Liczba wszystkich unikalnych wyrazów w idiomach: 976
+Powyższe, ale uporządkowane alfabetycznie.
+A 51
+B 102
+C 82
+D 47
+E 25
+F 50
+G 37
+H 44
+I 14
+J 8
+K 8
+L 47
+M 45
+N 25
+O 24
+P 64
+Q 4
+R 33
+S 123
+T 66
+U 6
+V 6
+W 57
+X 0
+Y 4
+Z 0
+
+Średnia ilość wyrazów na idiom: 3.96
